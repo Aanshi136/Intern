@@ -4,7 +4,11 @@
             count++;
         }
         document.getElementById("counterDisplay").innerHTML = "Count: " + count;
+        
+        
     }
 
+
+   
 
    
