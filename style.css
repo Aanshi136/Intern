@@ -1,0 +1,20 @@
+.button {
+  background-color: #5893d6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  position: absolute;
+  top: 200px; 
+  left: 580px; 
+  
+}
+body {
+  background-image: url('image.jpg');
+}
