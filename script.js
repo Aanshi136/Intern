@@ -21,7 +21,19 @@ for(let i=0; i<num.length; i++){
         }
 
     }
-}  */
+}  
+
+//02/01/25
+//number of sum 13 using for each loop
+let num = [10, 11, 12, 13, 1, 2, 3];
+let sum = 13;
+num.forEach((Val, i) => {
+    num.slice(i + 1).forEach((Val) => {
+        if (Val + nextVal === sum) {
+            console.log("Pair is " + Val + " and " + nextVal);
+        }
+    });
+}); */
 
 
 //02/01/25
