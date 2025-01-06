@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+</head>
+<body>
+    <div class="edit-container">
+        <h1>Edit Task</h1>
+        <textarea id="editInput" placeholder="Edit your task"></textarea>
+        <button id="saveButton">Save</button>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+    const taskToEdit = sessionStorage.getItem("taskToEdit");
+    const taskIndex = sessionStorage.getItem("taskIndex");
+
+    if (taskToEdit && taskIndex !== null) {
+        document.getElementById("editInput").value = taskToEdit;
+
+        document.getElementById("saveButton").onclick = function () {
+            const updatedTask = document.getElementById("editInput").value;
+            if (updatedTask === "") {
+                alert("Task cannot be empty!");
+                return;
+            }
+
+            sessionStorage.setItem("updatedTask", updatedTask);
+            sessionStorage.setItem("taskIndex", taskIndex);
+
+            // Redirect back to the main ToDo List page
+            window.location.href = "ToDoList.html";
+        };
+    }
+};
+
+    </script>
+    
+</body>
+</html>
+
+

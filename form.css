@@ -1,0 +1,176 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(24,24,24);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Page Styles */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-image: url('FormBg.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.login-h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.login-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+/* Signup Page Styles */
+.signup-container { 
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('FormBg.avif');
+    background-size: cover;
+    background-position: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+    overflow-y: auto; 
+    height: auto; 
+    max-height: 90vh; 
+}
+
+.signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.signup-container .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.signup-container .form-group label {
+    flex: 1 1 150px;
+    padding: 5px 10px;
+}
+
+.signup-container .form-group input,
+.signup-container .form-group select {
+    flex: 2 1 300px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.signup-container .form-group .checkbox-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.signup-container .form-group .radio-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.signup-container .form-group .radio-group label {
+    display: inline-block; 
+    margin-right: 20px;    
+}
+
+.signup-container .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.signup-container .button-group button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-container .button-group .submit-btn {
+    background-color: #ff6600;
+    color: white;
+}
+
+
+
+.error {
+    font-size: 12px;
+    margin-top: 5px;
+    visibility: hidden; 
+}
+
+.error-visible {
+    color: red;
+    visibility: visible;  
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .signup-container .form-group {
+        flex-direction: column;
+    }
+
+    .signup-container .form-group label {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
