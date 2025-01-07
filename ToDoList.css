@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    place-items: center;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.main {
+    align-items: center;
+}
+
+.taskcard {
+    background-color: rgba(0, 0, 51, 0.5);
+    width: 500px;
+    padding: 20px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+.list {
+    margin: 10px;
+    color: #D3D3D3;
+    text-align: center;
+    font-size: 34px;
+}
+
+.name {
+    color: #D3D3D3;
+    margin: 10px;
+}
+
+.add {
+    padding: 5px 10px;
+    background-color: rgb(217, 217, 217, 0.2);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    right: 48px;
+
+}
+
+.myInput {
+    margin: 10px;
+    width: 90%;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.deleteB, .updateB {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;  
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 0 auto;
+    
+   
+}
+
+.deleteB:hover, .updateB:hover {
+    opacity: 0.7;
+}
+
+.saveButton{
+    padding: 5px 10px;
+    background-color: rgb(217, 217, 217, 0.2);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    right: 48px;
+}
